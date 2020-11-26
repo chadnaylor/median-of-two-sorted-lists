@@ -1,0 +1,22 @@
+{
+  "name": "median-of-two-sorted-lists",
+  "version": "1.0.0",
+  "description": "Median of two sorted lists of length m and n in log(m+n) time",
+  "main": "median.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadnaylor/median-of-two-sorted-lists.git"
+  },
+  "author": "Chad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadnaylor/median-of-two-sorted-lists/issues"
+  },
+  "homepage": "https://github.com/chadnaylor/median-of-two-sorted-lists#readme",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
