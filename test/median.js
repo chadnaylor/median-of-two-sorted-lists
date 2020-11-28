@@ -16,8 +16,8 @@ describe('Median', function () {
             nums1 = [4], nums2 = [1, 2, 3, 5]
             assert.strictEqual(3, median.findMedianSortedArrays(nums1, nums2))
 
-            // nums1 = [5], nums2 = [1, 2, 3, 4]
-            // assert.strictEqual(3, median.findMedianSortedArrays(nums1, nums2))
+            nums1 = [5], nums2 = [1, 2, 3, 4]
+            assert.strictEqual(3, median.findMedianSortedArrays(nums1, nums2))
 
             nums1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], nums2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20] //i=3, j=0
             assert.strictEqual(11, median.findMedianSortedArrays(nums1, nums2))

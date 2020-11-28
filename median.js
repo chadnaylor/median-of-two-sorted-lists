@@ -91,11 +91,10 @@ var findMedianSortedArrays = function (nums1, nums2) {
                 return returnAnswer()
             }
             else if (nums2[j] > nums1[i]) {
-                if (j > 0 && nums2[j - 1] <= nums1[i]) {
+                if (i === halfTotalLength) {
                     return returnAnswer()
-                } else if (j === 0 && i === nums1.length - 1) {
-                    return returnAnswer()
-                } else if (j === 0 && nums1[i + 1] > nums2[j]) {
+                }
+                else if (j > 0 && nums2[j - 1] <= nums1[i]) {
                     return returnAnswer()
                 } else {
                     if (jStep >= iStep && j > 0) {
@@ -107,11 +106,10 @@ var findMedianSortedArrays = function (nums1, nums2) {
                     }
                 }
             } else if (nums2[j] < nums1[i]) {
+                if (j === halfTotalLength) {
+                    return returnAnswer()
+                }
                 if (i > 0 && nums1[i - 1] <= nums2[j]) {
-                    return returnAnswer()
-                } else if (i === 0 && j === nums2.length - 1) {
-                    return returnAnswer()
-                } else if (i === 0 && nums2[j + 1] > nums1[i]) {
                     return returnAnswer()
                 } else {
                     if (iStep >= jStep && i > 0) {
