@@ -28,15 +28,11 @@ var findMedianSortedArrays = function (nums1, nums2) {
             let upper, lower
             if (i === nums1.length) {
                 upper = nums2[j]
-
             } else if (j === nums2.length) {
                 upper = nums1[i]
-
             } else {
                 upper = Math.min(nums1[i], nums2[j])
-
             }
-
             if (j === 0) {
                 lower = nums1[i - 1]
             } else if (i === 0) {
@@ -44,7 +40,6 @@ var findMedianSortedArrays = function (nums1, nums2) {
             } else {
                 lower = Math.max(nums1[i - 1], nums2[j - 1])
             }
-
             return (upper + lower) / 2
         }
     }
