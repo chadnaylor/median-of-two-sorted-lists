@@ -1,5 +1,5 @@
 /**
-Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arranums2[j]s.
+Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 
 Follow up: The overall run time complexity should be O(log (m+n)).
 
